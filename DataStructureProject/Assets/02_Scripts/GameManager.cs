@@ -71,10 +71,9 @@ public class GameManager : Singleton<GameManager>
 
         currentMap = Maps.street;
         isAttend = false;
-        Invoke("PlayerMoveInit", 5f);
     }
 
-    private void PlayerMoveInit()
+    public void PlayerMoveInit()
     {
         player.transform.position = new Vector3(5750, -4940, 0);
     }

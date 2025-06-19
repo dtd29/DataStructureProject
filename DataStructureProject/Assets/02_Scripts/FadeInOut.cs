@@ -19,10 +19,11 @@ public class FadeInOut : MonoBehaviour
         Debug.Log("페이드 시작");
         anim.SetTrigger("fadeIn");
     }
-    
+
     public void FadeInCallBack()
     {
         GameManager.Instance.dialogueManager.DayTextPrint();
+        GameManager.Instance.PlayerMoveInit();
     }
 
     public void FadeOut()
